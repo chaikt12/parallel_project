@@ -1,0 +1,2 @@
+        data = { "n1":n1, "n2":n2 }
+        requests.post("http://192.168.43.140:5000/", json=data, headers={"content-type":"application/json"})
