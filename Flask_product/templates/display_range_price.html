@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+   <body>
+      <table border = 1>
+         <thead>
+            <td>Sub Category</td>
+            <td>Maximum_Price</td>
+			<td>Minimum_Price</td>
+         </thead>
+         
+         {% for row in productPrice %}
+            <tr>
+               <td>{{row[0]}}</td>
+               <td>{{row[1]}}</td>	
+			   <td>{{row[2]}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+      
+      
+   </body>
+</html>
