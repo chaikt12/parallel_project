@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+   <body>
+      <table border = 1>
+         <thead>
+            <td>Category</td>
+            <td>Sub Category</td>
+			<td>Item Count</td>
+         </thead>
+         
+         {% for row in productPrice %}
+            <tr>
+               <td>{{row['category']}}</td>
+               <td>{{row['sub_category']}}</td>	
+			   <td>{{row['item_count']}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+      
+      
+   </body>
+</html>
